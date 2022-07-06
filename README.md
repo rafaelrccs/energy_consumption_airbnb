@@ -15,6 +15,7 @@ Develop a energy consumption management solution to an Airbnb Host at no cost.
  
  - Internet Coonection
  - A energy consumption equipment (model SM3W LITE)
+ - Free Google Account
  
  # Solution Provided
  
@@ -26,6 +27,34 @@ Develop a energy consumption management solution to an Airbnb Host at no cost.
  - Google Drive API
  - Microsoft POWER BI
  - Google sheet
+
+
+# SOLUTION COST
+
+All the project falls into the google free tier, hence the project incurred not cost to the Airbnb host.
+
+# Explaining project Implementation
+
+SM3W has an option to send metrics measured in a configured time interval over a HTTP connection.
+Considering this reality I built a Google Cloud function that works with a HTTP trigger.
+
+The file main.py contains all the logic for processing the data acquisition stage, which consists of:
+
+- Receiving data from sensor over HTTP
+- Processing http request to transform the input
+- Save transformed data as a object in google cloud storage, naming it by the date of data arrival
+- Make aditional transformation to tranform data into a format that was ready to be inserted in a previously created google sheet
+- Authenticate to the google sheets and google drive api
+- Insert data into the google sheets
+
+After that a dashboard was developed in Power BI and used the google sheet as datasource
+
+The dashbaord has the option to parametrize KWH price and a filter for guest accomodation time period
+Below we have a diagram with the solution.
+
+## SOLUTION DIAGRAM
+
+
  
  
 
