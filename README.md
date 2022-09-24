@@ -13,25 +13,26 @@ Develop a energy consumption management solution to an Airbnb Host at no cost.
  
  ## Resources Avaiable
  
- - Internet Coonection
+ - Internet Connection
  - A energy consumption equipment (model SM3W LITE)
  - Free Google Account
  
  # Solution Provided
  
- To deliver this project the folowwing techologies were employed:
+ To deliver this project the following techologies were employed:
  
  - Google Cloud function (Python)
  - Google Cloud Storage
  - Google Sheets API
  - Google Drive API
+ - Google secret
  - Microsoft POWER BI
  - Google sheet
 
 
 # SOLUTION COST
 
-All the project falls into the google free tier, hence the project incurred not cost to the Airbnb host.
+All the project falls into the google free tier, hence the project doesn't incurred in costs to the Airbnb host.
 
 # Explaining project Implementation
 
